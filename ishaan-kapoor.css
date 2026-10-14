@@ -1,0 +1,57 @@
+:root {
+    --primary-color: #0066cc;
+    --primary-dark: #004a99;
+    --primary-light: #e9f3ff;
+    --secondary-color: #28a745;
+    --secondary-dark: #218838;
+    --secondary-light: #eaf7ec;
+    --accent-color: #1e73be;
+    --accent-light: #eaf1fb;
+    --text-dark: #1a1a1a;
+    --text-gray: #555;
+    --text-light: #777;
+    --bg-light: #f8f9fa;
+    --bg-white: #ffffff;
+    --border-color: #e6eef8;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 30px rgba(0,0,0,0.12);
+    --transition: all 0.3s ease;
+}
+
+.ishaankapoor {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--accent-light);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.ishaankapoor p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  strong {color: var(--primary-color);
+  }
+}
+
+.ishaankapoor-content img {
+  max-width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.photo-and-schedule {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.schedule {
+  background-color: var(--bg-white);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+  margin-top: 60px;
+}

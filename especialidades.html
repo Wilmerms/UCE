@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Especialidades - Centro Hospitalario UCE</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="especialidades.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>+1 (809) 529 6111</span>
+                    <span>infochuce@chuce.com.do</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="http://chuce.sinergia.com.do/" target="_blank" class="top-link">Consulta tus resultados</a>
+                    <a href="http://correo.chuce.com.do/" target="_blank" class="top-link">Mi Portal UCE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="inicio.html" class="logo-link" aria-label="Ir al inicio">
+                        <h1>UCE</h1>
+                        <span>Centro Hospitalario</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="inicio.html#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="especialistas.html">Especialistas</a></li>
+                        <li><a href="inicio.html#servicios">Servicios</a></li>
+                        <li><a href="inicio.html#noticias">Noticias</a></li>
+                        <li><a href="inicio.html#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="cta-button" onclick="location.href='inicio.html#agendar-cita'">Agendar Cita</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestras <span class="highlight-text">Especialidades</span></h1>
+            <p>Más de 30 especialidades médicas a tu disposición</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="specialty-search-section">
+        <div class="container">
+            <div class="search-box-wrapper">
+                <input type="text" id="specialtySearchInput" placeholder="Buscar especialidad..." onkeyup="filterSpecialties()">
+                <button onclick="filterSpecialties()">BUSCAR</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alphabetical Filter -->
+    <section class="alphabet-filter-section">
+        <div class="container">
+            <h3 class="filter-title">Filtrar alfabéticamente</h3>
+            <div class="alphabet-filters">
+                <button class="alphabet-btn active" onclick="filterByLetter('all', this)">VER TODO</button>
+                <button class="alphabet-btn" onclick="filterByLetter('A', this)">A</button>
+                <button class="alphabet-btn" onclick="filterByLetter('C', this)">C</button>
+                <button class="alphabet-btn" onclick="filterByLetter('D', this)">D</button>
+                <button class="alphabet-btn" onclick="filterByLetter('E', this)">E</button>
+                <button class="alphabet-btn" onclick="filterByLetter('G', this)">G</button>
+                <button class="alphabet-btn" onclick="filterByLetter('H', this)">H</button>
+                <button class="alphabet-btn" onclick="filterByLetter('I', this)">I</button>
+                <button class="alphabet-btn" onclick="filterByLetter('M', this)">M</button>
+                <button class="alphabet-btn" onclick="filterByLetter('N', this)">N</button>
+                <button class="alphabet-btn" onclick="filterByLetter('O', this)">O</button>
+                <button class="alphabet-btn" onclick="filterByLetter('P', this)">P</button>
+                <button class="alphabet-btn" onclick="filterByLetter('R', this)">R</button>
+                <button class="alphabet-btn" onclick="filterByLetter('T', this)">T</button>
+                <button class="alphabet-btn" onclick="filterByLetter('U', this)">U</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties List -->
+    <section class="specialties-list-section">
+        <div class="container">
+
+            <!-- A -->
+            <div class="letter-group" data-letter="A" id="A">
+                <h2 class="letter-heading">A</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/anestesiologia.png" alt="Anestesiología">
+                            <span>Anestesiología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/audiologia.png" alt="Audiología">
+                            <span>Audiología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- C -->
+            <div class="letter-group" data-letter="C" id="C">
+                <h2 class="letter-heading">C</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/cardiologia.png" alt="Cardiología">
+                            <span>Cardiología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/cirugia metabolica.png" alt="Cirugía Bariátrica">
+                            <span>Cirugía Bariátrica y Metabólica</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/cirugia general.png" alt="Cirugía General">
+                            <span>Cirugía General</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/cirugia maxilofacial.png" alt="Cirugía Maxilofacial">
+                            <span>Cirugía Maxilofacial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/cirugia-vascular.png" alt="Cirugía Vascular">
+                            <span>Cirugía Vascular</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/coloproctologia.png" alt="Coloproctología">
+                            <span>Coloproctología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- D -->
+            <div class="letter-group" data-letter="D" id="D">
+                <h2 class="letter-heading">D</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/dermatologia.png" alt="Dermatología">
+                            <span>Dermatología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/diabetologia.png" alt="Diabetología">
+                            <span>Diabetología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- E -->
+            <div class="letter-group" data-letter="E" id="E">
+                <h2 class="letter-heading">E</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/endocrinologia.png" alt="Endocrinología">
+                            <span>Endocrinología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- G -->
+            <div class="letter-group" data-letter="G" id="G">
+                <h2 class="letter-heading">G</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/gastroenterologia.png" alt="Gastroenterología">
+                            <span>Gastroenterología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/geriatria.png" alt="Geriatría">
+                            <span>Geriatría</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/ginecologia.png" alt="Ginecología">
+                            <span>Ginecología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- H -->
+            <div class="letter-group" data-letter="H" id="H">
+                <h2 class="letter-heading">H</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/hematologia.png" alt="Hematología">
+                            <span>Hematología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- I -->
+            <div class="letter-group" data-letter="I" id="I">
+                <h2 class="letter-heading">I</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/infectologia.png" alt="Infectología">
+                            <span>Infectología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- M -->
+            <div class="letter-group" data-letter="M" id="M">
+                <h2 class="letter-heading">M</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/mastologia.png" alt="Mastología">
+                            <span>Mastología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/medicina familiar.png" alt="Medicina Familiar">
+                            <span>Medicina Familiar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/Medicina interna.png" alt="Medicina Interna">
+                            <span>Medicina Interna</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- N -->
+            <div class="letter-group" data-letter="N" id="N">
+                <h2 class="letter-heading">N</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/nefrologia.png" alt="Nefrología">
+                            <span>Nefrología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/neumologia.png" alt="Neumología">
+                            <span>Neumología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/neurocirugia.png" alt="Neurocirugía">
+                            <span>Neurocirugía</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/neurologia.png" alt="Neurología">
+                            <span>Neurología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/nutricion.png" alt="Nutrición">
+                            <span>Nutrición</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- O -->
+            <div class="letter-group" data-letter="O" id="O">
+                <h2 class="letter-heading">O</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/odontologia.png" alt="Odontología">
+                            <span>Odontología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/oftalmologia.png" alt="Oftalmología">
+                            <span>Oftalmología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/oncologia.png" alt="Oncología">
+                            <span>Oncología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/ortopedia.png" alt="Ortopedia">
+                            <span>Ortopedia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/otorrinolaringologia.png" alt="Otorrinolaringología">
+                            <span>Otorrinolaringología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- P -->
+            <div class="letter-group" data-letter="P" id="P">
+                <h2 class="letter-heading">P</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/pediatria.png" alt="Pediatría">
+                            <span>Pediatría</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/pie_diabetico.png" alt="Pie Diabético">
+                            <span>Pie Diabético</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/psicologia.png" alt="Psicología">
+                            <span>Psicología</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/psiquiatria.png" alt="Psiquiatría">
+                            <span>Psiquiatría</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- R -->
+            <div class="letter-group" data-letter="R" id="R">
+                <h2 class="letter-heading">R</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/reumatologia.png" alt="Reumatología">
+                            <span>Reumatología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- T -->
+            <div class="letter-group" data-letter="T" id="T">
+                <h2 class="letter-heading">T</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/traumatologia.png" alt="Traumatología">
+                            <span>Traumatología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- U -->
+            <div class="letter-group" data-letter="U" id="U">
+                <h2 class="letter-heading">U</h2>
+                <ul class="specialties-items">
+                    <li>
+                        <a href="especialistas.html">
+                            <img class="spec-icon" src="media/urologia.png" alt="Urología">
+                            <span>Urología</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3>UCE</h3>
+                        <p>Centro Hospitalario</p>
+                    </div>
+                    <p class="footer-desc">Brindamos atención centrada en la calidad y seguridad de las personas. Ciencia y Humanismo.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/centrohospitalariouce/"><img src="https://imgs.search.brave.com/1oqu8juWYrY7EaMY1GqWqGb2h8w4qg8xEHqOtUx1qLM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2xvZ28taWctcG5n/L2xvZ28taWctaW5z/dGFncmFtLXBuZy10/cmFuc3BhcmVudC1p/bnN0YWdyYW0taW1h/Z2VzLXBsdXNwbmct/My5wbmc" alt="Instagram" class="social-icon"></a>
+                        <a href="https://www.facebook.com/chucespm"><img src="https://imgs.search.brave.com/I5ViYhvuL8bATcHg3os_hdrL2IfqvSNhCeBBg9YFL3I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzNzI1My9p/c29sYXRlZC9wcmV2/aWV3LzkwZGQ5ZjEy/ZmRkMWVlZmI4Yzg5/NzY5MDM5NDRjMDI2/LWZhY2Vib29rLWlj/b24tbG9nby5wbmc" alt="Facebook" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuestros Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="inicio.html#servicios">Laboratorio Clínico</a></li>
+                        <li><a href="inicio.html#servicios">Unidad de Imágenes</a></li>
+                        <li><a href="inicio.html#servicios">Emergencias 24/7</a></li>
+                        <li><a href="inicio.html#servicios">Área Quirúrgica</a></li>
+                        <li><a href="inicio.html#servicios">Hospitalización</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nosotros</h4>
+                    <ul class="footer-links">
+                        <li><a href="inicio.html#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="especialistas.html">Cuerpo Médico</a></li>
+                        <li><a href="inicio.html#noticias">Noticias</a></li>
+                        <li><a href="inicio.html#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Derechos del Paciente</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><a href="https://www.google.com/maps/place/Centro+Medico+UCE/@18.447273,-69.308264,13z" target="_blank">📍 Av. Presidente Henríquez #3 - San Pedro de Macorís</a></li>
+                        <li>(809) 529 6111</li>
+                        <li>infochuce@chuce.com.do</li>
+                        <li><strong>Horario:</strong><br>Administrativo: 8:00 AM - 5:00 PM<br>Hospitalario: 24 Horas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Centro Hospitalario UCE. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+      <!-- Consent Banner -->
+    <div class="consent">
+        <div class="container">
+            <p><strong>Aviso sobre el Tratamiento de Datos Personales:</strong> Al usar este sitio web, usted consiente que sus datos personales sean procesados por el Centro Hospitalario UCE para la validación de su identidad y prestación de servicios de salud (nombres, teléfono, email, etc.).</p>
+        </div>
+    </div>
+
+
+    <script>
+        // Filter by letter
+        function filterByLetter(letter, btn) {
+            const groups = document.querySelectorAll('.letter-group');
+            const buttons = document.querySelectorAll('.alphabet-btn');
+
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            groups.forEach(group => {
+                if (letter === 'all' || group.dataset.letter === letter) {
+                    group.style.display = 'block';
+                } else {
+                    group.style.display = 'none';
+                }
+            });
+
+            if (letter !== 'all') {
+                const targetGroup = document.getElementById(letter);
+                if (targetGroup) {
+                    targetGroup.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        }
+
+        // Search filter
+        function filterSpecialties() {
+            const searchText = document.getElementById('specialtySearchInput').value.toLowerCase();
+            const groups = document.querySelectorAll('.letter-group');
+
+            groups.forEach(group => {
+                const items = group.querySelectorAll('.specialties-items li');
+                let hasVisibleItems = false;
+
+                items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(searchText)) {
+                        item.style.display = 'block';
+                        hasVisibleItems = true;
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                group.style.display = hasVisibleItems ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Hospitalario UCE</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="stylesheet" href="especialistas.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="top">
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span>+1 (809) 529 6111</span>
+                    <span>infochuce@chuce.com.do</span>
+                </div>
+                <div class="top-bar-right">
+                    <a href="#" class="top-link">Consulta tus resultados</a>
+                    <a href="#" class="top-link">Mi Portal UCE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="#top" class="logo-link" aria-label="Ir al inicio">
+                        <h1>UCE</h1>
+                        <span>Centro Hospitalario</span>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li class="dropdown">
+                            <a href="especialidades.html">Especialidades</a>
+                        </li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+                <button class="cta-button" onclick="location.href='#agendar-cita'">Agendar Cita</button>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay loop muted playsinline>
+            <source src="https://www.pexels.com/download/video/6129936/" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2>Atención Médica Centrada en las Personas</h2>
+                <p>Somos un hospital referente en alta complejidad, centrado en la calidad y seguridad. Cuidamos la salud actual y futura de las personas para una vida más larga, sana y feliz.</p>
+                <div class="hero-badges">
+                    <div class="badge">
+                        <span class="badge-icon"></span>
+                        <span class="badge-text">Acreditación Internacional</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon"></span>
+                        <span class="badge-text">Medicina de Precisión</span>
+                    </div>
+                    <div class="badge">
+                        <span class="badge-icon"></span>
+                        <span class="badge-text">Tecnología de Vanguardia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Floating Search Card -->
+        <div class="hero-search">
+            <div class="search-card">
+                <div class="search-card-left">
+                    <div class="search-icon">🔍</div>
+                    <div class="search-title">Encuentra tu Especialista</div>
+                </div>
+                <div class="search-card-right">
+                    <div class="search-box">
+                        <input type="text" placeholder="Buscar por nombre, especialidad o condición médica...">
+                        <button>Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="quienes-somos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestro Compromiso</span>
+                <h3>¿Por qué elegir el Hospital UCE?</h3>
+                <p class="section-subtitle">Excelencia médica combinando ciencia y humanismo</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>En el <strong>Centro Hospitalario UCE</strong> nos levantamos cada mañana para cuidar de la salud actual y futura de las personas, buscando mejorar su calidad de vida mediante procedimientos médicos de excelencia y estándares rigurosos de evaluación, diagnóstico y tratamiento.</p>
+                    <p>Contamos con un <strong>Cuerpo Médico y Administrativo</strong> altamente capacitado, tecnología de equipos y sistemas de información de vanguardia, garantizando una medicina de precisión personalizada y tratamientos innovadores.</p>
+                    <p>Nuestro compromiso principal es cuidar la salud de la comunidad y preservar un ambiente hospitalario seguro y saludable, donde todo el personal y los pacientes comparten la responsabilidad de mantener el hospital libre de factores que favorezcan la propagación de enfermedades.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <span class="feature-number">50K+</span>
+                            <span class="feature-label">Pacientes Atendidos Anualmente</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">70+</span>
+                            <span class="feature-label">Especialistas Certificados</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-number">24/7</span>
+                            <span class="feature-label">Servicio de Emergencias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop" alt="Hospital UCE Facilities">
+                    <div class="image-badge">
+                        <span class="badge-large">Acreditación Internacional JCI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Specialists Section -->
+<section class="specialists" id="especialistas-medicos">
+    <div class="container">
+        <div class="section-header">
+            <h3>Nuestros <span class="highlight-text">Especialistas</span></h3>
+        </div>
+        <div class="specialists-grid">
+            <!-- Especialista 1 -->
+            <div class="specialist-card">
+                <div class="specialist-image">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop" alt="Dr. Pedro Luis Mena">
+                    <span class="specialty-badge">Pie Diabético</span>
+                </div>
+                <div class="specialist-info">
+                    <button class="schedule-btn" onclick="location.href='pedro-mena.html'">VER HORARIOS</button>
+                    <h4 class="specialist-name">Pedro Luis Mena</h4>
+                    <p class="specialist-title">Director de la Unidad de Pie Diabético</p>
+                    <div class="subspecialties">
+                        <p class="subspecialties-title">Sub-Especialidades</p>
+                        <ul class="subspecialties-list">
+                            <li>✓ Diagnóstico y Tratamiento del Pie Diabético</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Especialista 2 -->
+            <div class="specialist-card">
+                <div class="specialist-image">
+                    <img src="https://images.pexels.com/photos/32254667/pexels-photo-32254667.jpeg" alt="Dra. Lucia Janet Velez Garcia">
+                    <span class="specialty-badge">Endocrinología</span>
+                </div>
+                <div class="specialist-info">
+                    <button class="schedule-btn" onclick="location.href='lucia-velez.html'">VER HORARIOS</button>
+                    <h4 class="specialist-name">Lucia Velez</h4>
+                    <p class="specialist-title">Endocrinóloga</p>
+                    <div class="subspecialties">
+                        <p class="subspecialties-title">Sub-Especialidades</p>
+                        <ul class="subspecialties-list">
+                            <li>✓ Endocrinología</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Especialista 3 -->
+            <div class="specialist-card">
+                <div class="specialist-image">
+                    <img src="https://images.pexels.com/photos/27298085/pexels-photo-27298085.jpeg" alt="Dr. Ishaan Dev Kapoor">
+                    <span class="specialty-badge">Cirugía bariátrica</span>
+                </div>
+                <div class="specialist-info">
+                    <button class="schedule-btn" onclick="location.href='ishaan-kapoor.html'">VER HORARIOS</button>
+                    <h4 class="specialist-name">Ishaan Dev Kapoor</h4>
+                    <p class="specialist-title">Cirujano Bariátrico</p>
+                    <div class="subspecialties">
+                        <p class="subspecialties-title">Sub-Especialidades</p>
+                        <ul class="subspecialties-list">
+                            <li>✓ Cirugía bariátrica</li>
+                            <li>✓ Cirugía metabólica</li>
+                            <li>✓ Cirugía laparoscópica avanzada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Especialista 4 -->
+            <div class="specialist-card">
+                <div class="specialist-image">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop" alt="Dra. Claudia Milagros Almonte Garcia">
+                    <span class="specialty-badge">Cardiología</span>
+                </div>
+                <div class="specialist-info">
+                    <button class="schedule-btn" onclick="location.href='claudia-almonte.html'">VER HORARIOS</button>
+                    <h4 class="specialist-name">Claudia Almonte</h4>
+                    <p class="specialist-title">Cardióloga</p>
+                    <div class="subspecialties">
+                        <p class="subspecialties-title">Sub-Especialidades</p>
+                        <ul class="subspecialties-list">
+                            <li>✓ Ecocardiografía</li>
+                            <li>✓ Internista</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="especialistas.html" class="btn-outline">Ver Más Especialistas</a>
+        </div>
+    </div>
+</section>
+    
+    <!-- Specialties Section -->
+    <section class="specialties" id="especialidades">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestras Especialidades</span>
+                <h3>Profesionales Altamente Capacitados</h3>
+                <p class="section-subtitle">Más de 30 especialidades médicas a tu disposición</p>
+            </div>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <h4>Cardiología</h4>
+                    <p>Diagnóstico y tratamiento de enfermedades cardiovasculares</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Neurología</h4>
+                    <p>Atención especializada del sistema nervioso</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Oncología</h4>
+                    <p>Tratamiento integral del cáncer</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Pediatría</h4>
+                    <p>Cuidado especializado para niños y adolescentes</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Ginecología</h4>
+                    <p>Salud integral de la mujer</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Traumatología</h4>
+                    <p>Tratamiento de lesiones músculo-esqueléticas</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Urología</h4>
+                    <p>Especialistas en sistema urinario</p>
+                </div>
+                <div class="specialty-card">
+                    <h4>Endocrinología</h4>
+                    <p>Tratamiento de trastornos hormonales</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="especialidades.html" class="btn-outline">Ver Todas las Especialidades</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Servicios Médicos</span>
+                <h3>Servicios Integrales de Salud</h3>
+            </div>
+            <div class="services-tabs">
+                <button class="tab-btn active" onclick="showService('laboratorio')">Laboratorio Clínico</button>
+                <button class="tab-btn" onclick="showService('imagenes')">Unidad de Imágenes</button>
+                <button class="tab-btn" onclick="showService('emergencias')">Emergencias 24/7</button>
+                <button class="tab-btn" onclick="showService('cirugia')">Área Quirúrgica</button>
+                <button class="tab-btn" onclick="showService('hospitalizacion')">Hospitalización</button>
+            </div>
+            <div class="services-content">
+                <div class="service-item active" id="laboratorio">
+                    <div class="service-grid">
+                        <div class="service-text">
+                            <h4>Laboratorio Clínico</h4>
+                            <p>Nuestro laboratorio clínico ofrece un servicio integral equipado con tecnología de vanguardia y operado por profesionales altamente capacitados, garantizando resultados precisos y confiables.</p>
+                            <ul class="service-list">
+                                <li>✓ Hematología completa</li>
+                                <li>✓ Química sanguínea</li>
+                                <li>✓ Microbiología y cultivos</li>
+                                <li>✓ Pruebas especializadas</li>
+                                <li>✓ Resultados en línea</li>
+                            </ul>
+                            <a class="btn-primary" href="formulario.html" role="button">Agendar Análisis</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=600&h=400&fit=crop" alt="Laboratorio">
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item" id="imagenes">
+                    <div class="service-grid">
+                        <div class="service-text">
+                            <h4>Unidad de Imágenes</h4>
+                            <p>Equipos tecnológicos de última generación para la preparación, toma e interpretación de estudios de imágenes.</p>
+                            <ul class="service-list">
+                                <li>✓ Resonancia Magnética</li>
+                                <li>✓ Tomografía Computarizada</li>
+                                <li>✓ Rayos X Digital</li>
+                                <li>✓ Ecografía 3D/4D</li>
+                                <li>✓ Mamografía Digital</li>
+                            </ul>
+                            <a class="btn-primary" href="formulario.html" role="button">Agendar Estudio</a>
+                        </div>
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&h=400&fit=crop" alt="Imágenes">
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item" id="emergencias">
+                    <div class="service-grid">
+                        <div class="service-text">
+                            <h4>Emergencias 24/7</h4>
+                            <p>Servicio de emergencias disponible las 24 horas del día, los 7 días de la semana, con personal especializado y equipamiento de última generación.</p>
+                            <ul class="service-list">
+                                <li>✓ Atención inmediata</li>
+                                <li>✓ Unidad de trauma</li>
+                                <li>✓ Sala de reanimación</li>
+                                <li>✓ Ambulancias equipadas</li>
+                                <li>✓ Especialistas de guardia</li>
+                            </ul>
+                            <button class="btn-primary">Llamar Emergencias</button>
+                        </div>
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=600&h=400&fit=crop" alt="Emergencias">
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item" id="cirugia">
+                    <div class="service-grid">
+                        <div class="service-text">
+                            <h4>Área Quirúrgica</h4>
+                            <p>Quirófanos de última generación equipados con tecnología avanzada y sistema de aire filtrado para garantizar procedimientos seguros.</p>
+                            <ul class="service-list">
+                                <li>✓ 10 quirófanos modernos</li>
+                                <li>✓ Cirugía robótica</li>
+                                <li>✓ Cirugía laparoscópica</li>
+                                <li>✓ Recuperación post-quirúrgica</li>
+                                <li>✓ Anestesiología especializada</li>
+                            </ul>
+                            <button class="btn-primary">Más Información</button>
+                        </div>
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=600&h=400&fit=crop" alt="Quirófano">
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item" id="hospitalizacion">
+                    <div class="service-grid">
+                        <div class="service-text">
+                            <h4>Hospitalización</h4>
+                            <p>Habitaciones confortables y equipadas para garantizar una recuperación óptima con atención personalizada.</p>
+                            <ul class="service-list">
+                                <li>✓ Habitaciones privadas</li>
+                                <li>✓ UCI y UCIN</li>
+                                <li>✓ Enfermería 24/7</li>
+                                <li>✓ Alimentación personalizada</li>
+                            </ul>
+                            <button class="btn-primary">Ver Habitaciones</button>
+                        </div>
+                        <div class="service-image">
+                            <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=600&h=400&fit=crop" alt="Hospitalización">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="noticias">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Noticias y Novedades</span>
+                <h3>Mantente Informado</h3>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=250&fit=crop" alt="Noticia 1">
+                        <span class="news-badge">Institucional</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15 de Enero, 2026</span>
+                        <h4>UCE Inaugura Nuevo Centro de Cirugía Robótica</h4>
+                        <p>El Hospital UCE da un paso adelante en innovación médica con la apertura de su Centro de Cirugía Robótica.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?w=400&h=250&fit=crop" alt="Noticia 2">
+                        <span class="news-badge">Salud</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">10 de Enero, 2026</span>
+                        <h4>Prevención Cardiovascular: Consejos de Nuestros Expertos</h4>
+                        <p>Conoce las recomendaciones de nuestros cardiólogos para mantener un corazón saludable.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?w=400&h=250&fit=crop" alt="Noticia 3">
+                        <span class="news-badge">Evento</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">5 de Enero, 2026</span>
+                        <h4>Jornada Gratuita de Chequeo Preventivo</h4>
+                        <p>El próximo mes realizaremos una jornada gratuita de chequeos preventivos para la comunidad.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insurance Section -->
+    <section class="insurance">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Facilidades de Pago</span>
+                <h3>Seguros Médicos Aceptados</h3>
+                <p class="section-subtitle">Aceptamos planes básicos, complementarios y premium</p>
+            </div>
+            <div class="insurance-grid">
+                <div class="insurance-logo">
+                    <img src="https://imgs.search.brave.com/vdgsbxNjbJHI8tV6KqG217A1mYCrQSCqGlxuH0ImgWU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92ZWN0/b3JzZWVrLmNvbS93/cC1jb250ZW50L3Vw/bG9hZHMvMjAyMy8w/OS9BcnMtSHVtYW5v/LUxvZ28tVmVjdG9y/LnN2Zy0ucG5n" alt="ARS Humano" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">ARS Humano</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://cdnsgu-dbcefpcpfsajcgdk.a01.azurefd.net/seguros/media/fn4p0pff/logo-seguros-universal.svg" alt="Seguros Universal" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">Seguros Universal</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://www.ainep.edu.do/wp-content/uploads/Logo-ARS-Palic-Azul-Sin-Slogan.png" alt="ARS Palic" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">ARS Palic</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT-X2Zz0jNhfzY_s9SS_HHk8h0dvyNiPfzYQ&s" alt="Mapfre" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">Mapfre</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLsHVn_ZNcjsD1z1osK_x5GLZlYbNxQ0tAfg&s" alt="ARS Futuro" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">ARS Futuro</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://gcs-international.com/wp-content/uploads/2017/06/Seguros-Banreservas-Logo.png" alt="Seguros Reservas" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">Seguros Reservas</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XZmAqpauMaevAg9utAzS2vovltuFuLZKrA&s" alt="ARS Senasa" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">ARS Senasa</span>
+                </div>
+                <div class="insurance-logo">
+                    <img src="https://adars.org.do/wp-content/uploads/2025/11/ARS-Primera.webp" alt="Primera ARS" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                    <span class="logo-text">Primera ARS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="agendar-cita">
+        <div class="container">
+            <div class="cta-content">
+                <h3>¿Necesitas una Consulta Médica?</h3>
+                <p>Agenda tu cita con nuestros especialistas de forma rápida y sencilla</p>
+                <div class="cta-buttons">
+                    <button class="btn-cta-primary" onclick="location.href='formulario.html'">Agendar Cita</button>
+                    <button class="btn-cta-secondary">Llamar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <h3>UCE</h3>
+                        <p>Centro Hospitalario</p>
+                    </div>
+                    <p class="footer-desc">Brindamos atención centrada en la calidad y seguridad de las personas. Ciencia y Humanismo.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/centrohospitalariouce/"><img src="https://imgs.search.brave.com/1oqu8juWYrY7EaMY1GqWqGb2h8w4qg8xEHqOtUx1qLM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L2xvZ28taWctcG5n/L2xvZ28taWctaW5z/dGFncmFtLXBuZy10/cmFuc3BhcmVudC1p/bnN0YWdyYW0taW1h/Z2VzLXBsdXNwbmct/My5wbmc" alt="Instagram" class="social-icon"></a>
+                        <a href="https://www.facebook.com/chucespm#"><img src="https://imgs.search.brave.com/I5ViYhvuL8bATcHg3os_hdrL2IfqvSNhCeBBg9YFL3I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudmV4ZWxzLmNv/bS9tZWRpYS91c2Vy/cy8zLzEzNzI1My9p/c29sYXRlZC9wcmV2/aWV3LzkwZGQ5ZjEy/ZmRkMWVlZmI4Yzg5/NzY5MDM5NDRjMDI2/LWZhY2Vib29rLWlj/b24tbG9nby5wbmc" alt="Facebook" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Nuestros Servicios</h4>
+                    <ul class="footer-links">
+                        <li>Emergencias 24/7</li>
+                        <li>Laboratorio Clínico</li>
+                        <li>Unidad de Imágenes</li>
+                        <li>Área Quirúrgica</li>
+                        <li>Hospitalización</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Nosotros</h4>
+                    <ul class="footer-links">
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                        <li><a href="#especialistas-medicos">Cuerpo Médico</a></li>
+                        <li><a href="#noticias">Noticias</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Información</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Derechos del Paciente</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li><a href="https://www.google.com/maps/place/Centro+Medico+UCE/@18.447273,-69.308264,13z/data=!4m6!3m5!1s0x8eaf608c56a98a6f:0x6abf962db13a6948!8m2!3d18.4472731!4d-69.3082639!16s%2Fg%2F11c1ncykgz?hl=es&entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">📍 Av. Presidente Henríquez #3 - San Pedro de Macorís, República Dominicana.</a></li>
+                        <li>+1 (809) 529 6111</li>
+                        <li>infochuce@chuce.com.do</li>
+                        <li><strong>Horario de Atención:</strong><br>Administrativo: 8:00 AM - 5:00 PM<br>Hospitalario: 24 Horas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2026 Centro Hospitalario UCE. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    
+    <!-- Consent Banner -->
+    <div class="consent">
+        <div class="container">
+            <p><strong>Aviso sobre el Tratamiento de Datos Personales:</strong> Al usar este sitio web, usted consiente que sus datos personales sean procesados por el Centro Hospitalario UCE para la validación de su identidad y prestación de servicios de salud (nombres, teléfono, email, etc.).</p>
+        </div>
+    </div>
+
+    <script>
+        // Service tabs functionality
+        function showService(serviceId) {
+            const items = document.querySelectorAll('.service-item');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            items.forEach(item => item.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            document.getElementById(serviceId).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Sticky header on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            } else {
+                header.style.boxShadow = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

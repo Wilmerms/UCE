@@ -1,0 +1,239 @@
+/* ==================== HEADER ==================== */
+header {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ==================== PAGE HEADER ==================== */
+.page-header {
+    padding: 2rem 0 1rem;
+}
+
+/* highlight-text en page titles → azul (identidad) */
+.page-header .highlight-text {
+    color: var(--primary-color);
+}
+
+/* ==================== SEARCH ==================== */
+.specialty-search-section {
+    background: white;
+    padding: 1rem 0 2rem;
+}
+
+.search-box-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.search-box-wrapper input {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: var(--transition);
+    font-family: inherit;
+}
+
+/* Focus input → accent */
+.search-box-wrapper input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+/* Botón BUSCAR → verde (acción) */
+.search-box-wrapper button {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.search-box-wrapper button:hover {
+    background: var(--secondary-dark);
+    transform: translateY(-2px);
+}
+
+/* ==================== ALPHABET FILTER ==================== */
+.alphabet-filter-section {
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    background: var(--bg-light);
+}
+
+.filter-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.alphabet-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.alphabet-btn {
+    background: white;
+    border: 2px solid #e0e0e0;
+    color: var(--text-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 50px;
+    text-align: center;
+}
+
+/* Hover botón letra → accent */
+.alphabet-btn:hover {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Activo botón letra → accent fill */
+.alphabet-btn.active {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+/* ==================== SPECIALTIES LIST ==================== */
+.specialties-list-section {
+    background: white;
+    padding: 3rem 0 5rem;
+}
+
+.letter-group {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.letter-group:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Letter heading → verde con borde verde */
+.letter-heading {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 3px solid var(--secondary-color);
+    display: inline-block;
+}
+
+.specialties-items {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+}
+
+.specialties-items li {
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+/* Hover item → fondo accent-light sutil */
+.specialties-items li:hover {
+    background: var(--accent-light);
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+/* ---------- enlace ---------- */
+.specialties-items a {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem 1.2rem;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.05rem;
+    gap: 1rem;
+    transition: color 0.2s;
+}
+
+/* Hover texto → accent */
+.specialties-items a:hover {
+    color: var(--accent-color);
+}
+
+/* ---------- icono PNG ---------- */
+img.spec-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ---------- placeholder circular → accent */
+span.spec-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    color: white;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .search-box-wrapper {
+        flex-direction: column;
+    }
+
+    .search-box-wrapper button {
+        width: 100%;
+    }
+
+    .alphabet-filters {
+        justify-content: center;
+    }
+
+    .alphabet-btn {
+        min-width: 42px;
+        padding: 0.45rem 0.7rem;
+        font-size: 0.85rem;
+    }
+
+    .specialties-items {
+        grid-template-columns: 1fr;
+    }
+
+    .letter-heading {
+        font-size: 1.8rem;
+    }
+
+    img.spec-icon,
+    span.spec-placeholder {
+        width: 32px;
+        height: 32px;
+    }
+}
